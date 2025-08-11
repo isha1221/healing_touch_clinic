@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Healing color palette inspired by clinic logo */
+    --background: 0 0% 100%;
+    --foreground: 150 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 20% 15%;
+
+    /* Primary - Healing Green */
+    --primary: 158 64% 52%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 158 64% 85%;
+    --primary-dark: 158 64% 35%;
+
+    /* Secondary - Warm Orange */
+    --secondary: 32 95% 60%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 32 95% 85%;
+
+    /* Accent - Vitality Red */
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 158 20% 96%;
+    --muted-foreground: 150 10% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 158 20% 90%;
+    --input: 158 20% 95%;
+    --ring: 158 64% 52%;
+
+    /* Healing gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
+    --gradient-healing: linear-gradient(135deg, hsl(var(--primary-light)), hsl(var(--secondary-light)), hsl(var(--primary-light)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary) / 0.1), hsl(var(--secondary) / 0.1));
+
+    /* Shadows with healing theme */
+    --shadow-healing: 0 10px 30px -10px hsl(var(--primary) / 0.3);
+    --shadow-gentle: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-warm: 0 8px 25px -5px hsl(var(--secondary) / 0.2);
+
+    /* Transitions */
+    --transition-healing: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 150 20% 8%;
+    --foreground: 158 20% 95%;
+
+    --card: 150 20% 10%;
+    --card-foreground: 158 20% 95%;
+
+    --popover: 150 20% 10%;
+    --popover-foreground: 158 20% 95%;
+
+    --primary: 158 64% 52%;
+    --primary-foreground: 0 0% 98%;
+    --primary-light: 158 64% 25%;
+    --primary-dark: 158 64% 45%;
+
+    --secondary: 32 95% 60%;
+    --secondary-foreground: 0 0% 98%;
+    --secondary-light: 32 95% 25%;
+
+    --accent: 0 84% 60%;
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 150 20% 15%;
+    --muted-foreground: 158 10% 65%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 150 20% 20%;
+    --input: 150 20% 15%;
+    --ring: 158 64% 52%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
