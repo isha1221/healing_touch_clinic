@@ -1,3 +1,5 @@
+
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -7,6 +9,15 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+	],
+	// Add safelist to prevent purging of dynamic classes
+	safelist: [
+		'hover:shadow-healing',
+		'hover:shadow-hot',
+		'hover:shadow-warm',
+		'shadow-healing',
+		'shadow-hot', 
+		'shadow-warm'
 	],
 	prefix: "",
 	theme: {
@@ -34,6 +45,10 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))',
 					light: 'hsl(var(--secondary-light))'
+				},red: {
+					DEFAULT: 'hsl(var(--red))',
+					foreground: 'hsl(var(--red-foreground))',
+					light: 'hsl(var(--red-light))'
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',
@@ -79,7 +94,8 @@ export default {
 			boxShadow: {
 				'healing': 'var(--shadow-healing)',
 				'gentle': 'var(--shadow-gentle)',
-				'warm': 'var(--shadow-warm)'
+				'warm': 'var(--shadow-warm)',
+				'hot': 'var(--shadow-hot)'
 			},
 			transitionTimingFunction: {
 				'healing': 'var(--transition-healing)'

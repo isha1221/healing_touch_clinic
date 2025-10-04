@@ -29,6 +29,11 @@ All colors MUST be HSL.
     --secondary-foreground: 0 0% 98%;
     --secondary-light: 32 95% 85%;
 
+    /* Red Color Variants */
+    --red: 0 84% 60%;
+    --red-foreground: 0 0% 98%;
+    --red-light: 0 84% 85%;
+
     /* Accent - Vitality Red */
     --accent: 0 84% 60%;
     --accent-foreground: 0 0% 98%;
@@ -51,8 +56,9 @@ All colors MUST be HSL.
     /* Shadows with healing theme */
     --shadow-healing: 0 10px 30px -10px hsl(var(--primary) / 0.3);
     --shadow-gentle: 0 4px 20px -4px hsl(var(--primary) / 0.15);
-    --shadow-warm: 0 8px 25px -5px hsl(var(--secondary) / 0.2);
-
+    --shadow-warm: 0 8px 25px -5px hsl(var(--secondary) / 0.3);
+    --shadow-hot: 0 10px 30px -10px hsl(var(--red) / 0.3);
+    
     /* Transitions */
     --transition-healing: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -126,3 +132,4 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+

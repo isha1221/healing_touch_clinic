@@ -30,7 +30,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 size="lg"
-                onClick={() => scrollToSection('webinars')}
+                onClick={() => scrollToSection('contact')}
                 className="bg-gradient-primary hover:shadow-healing text-lg px-8 py-6"
               >
                 <Calendar className="w-5 h-5 mr-2" />
@@ -68,11 +68,7 @@ const Hero = () => {
             <div className="relative rounded-3xl overflow-hidden shadow-healing bg-gradient-healing p-8">
               <div className="bg-card rounded-2xl p-8 text-center">
                 <div className="w-32 h-32 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-warm">
-                  <img 
-                    src="/lovable-uploads/736f31af-76da-4027-928d-ded6610cab7a.png" 
-                    alt="Healing Touch Logo"
-                    className="w-20 h-20"
-                  />
+                 
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-2">Dr. [Doctor Name]</h3>
                 <p className="text-muted-foreground mb-4">M.D. (Homoeopathy), 15+ Years Experience</p>
@@ -115,3 +111,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+

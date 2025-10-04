@@ -24,10 +24,7 @@ const Navbar = () => {
               alt="Healing Touch Homoeopathic Clinic"
               className="h-10 w-auto"
             />
-            <div className="hidden sm:block">
-              <h1 className="font-bold text-lg text-primary">Healing Touch</h1>
-              <p className="text-xs text-muted-foreground">Homoeopathic Clinic</p>
-            </div>
+           
           </div>
 
           {/* Desktop Navigation */}
@@ -50,12 +47,12 @@ const Navbar = () => {
             >
               Treatments
             </button>
-            <button 
+            {/* <button 
               onClick={() => scrollToSection('webinars')}
               className="text-foreground hover:text-primary transition-colors"
             >
               Webinars
-            </button>
+            </button> */}
             <button 
               onClick={() => scrollToSection('testimonials')}
               className="text-foreground hover:text-primary transition-colors"
@@ -81,7 +78,7 @@ const Navbar = () => {
               </Button>
               <Button 
                 size="sm"
-                onClick={() => scrollToSection('webinars')}
+                onClick={() => scrollToSection('contact')}
                 className="bg-gradient-primary hover:shadow-healing"
               >
                 <Calendar className="w-4 h-4 mr-2" />
