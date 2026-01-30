@@ -64,7 +64,7 @@ const Treatments = () => {
       icon: Users,
       title: "Women's Health",
       description: "Specialized care for women's unique health needs",
-      conditions: ["PCOD/PCOS", "Menstrual Disorders", "Menopause", "Infertility", "Pregnancy Care", "Tyroide Disorder"],
+      conditions: ["PCOD/PCOS", "Menstrual Disorders", "Menopause", "Infertility", "Pregnancy Care", "Thyroide Disorder"],
       color: "accent",
       gradient: "bg-accent/10"
     },
@@ -86,7 +86,7 @@ const Treatments = () => {
     },
     {
       icon: Shield,
-      title: "miscellaneous",
+      title: "Miscellaneous",
       description: "Supporting immune system balance naturally",
       conditions: ["Kidney Stones", "Diabetes", "Rheumatoid Arthritis", "Lupus(SLE)", "Urinary tract infection(UTI)", "Cancers"],
       color: "secondary",
