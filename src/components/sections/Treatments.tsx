@@ -86,7 +86,7 @@ const Treatments = () => {
     },
     {
       icon: Shield,
-      title: "Misellenc  ",
+      title: "miscellaneous",
       description: "Supporting immune system balance naturally",
       conditions: ["Kidney Stones", "Diabetes", "Rheumatoid Arthritis", "Lupus(SLE)", "Urinary tract infection(UTI)", "Cancers"],
       color: "secondary",

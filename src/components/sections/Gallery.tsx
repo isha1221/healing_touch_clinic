@@ -47,7 +47,7 @@ const Gallery = () => {
   const galleryImages: BeforeAfterImage[] = [
     {
       id: 1,
-      title: "Targeted Treatment for Adult Acne",
+      title: "Targeted Treatment for Acne",
     
       before: img1,
       after: img2,
@@ -63,8 +63,8 @@ const Gallery = () => {
     {
       id: 3,
       title: "Relief from Chronic Psoriasis/Eczema",
-      before: img5,
-      after: img6,
+      before: img6,
+      after: img5,
       description: "Successfully calmed intense redness and scaled plaques, restoring the skin's natural barrier and smoothness."
     },
     {
