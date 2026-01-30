@@ -98,14 +98,16 @@ const Contact = () => {
 
   const clinicInfo = {
     address: "Shop no 6, Rahul society, chowk, near Ganga Dham, Hamal Nagar, Market Yard, Bibwewadi, Pune, Maharashtra 411037",
-    phone: "+91 98765 43210",
-    email: "info@healingtouchclinic.com",
-    whatsapp: "+91 98765 43210",
+    phone: "+91 80879 94395",
+    email: "healingtouch20@yahoo.com",
+    whatsapp: "+91 80879 94395",
     hours: {
       weekdays: "9:00 AM - 7:00 PM",
       saturday: "9:00 AM - 5:00 PM",
       sunday: "10:00 AM - 2:00 PM"
-    }
+    },
+    googleMapsLink:"https://maps.app.goo.gl/kQTXrTCC7vxKU4u59"
+
   };
 
   return (
@@ -132,13 +134,21 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">{clinicInfo.address}</p>
-                  <Button 
+                  {/* <Button 
                     variant="outline" 
                     className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
                   >
                     <Navigation className="w-4 h-4 mr-2" />
                     Get Directions
-                  </Button>
+                  </Button> */}
+                  <Button 
+  variant="outline" 
+  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+  onClick={() => window.open(clinicInfo.googleMapsLink, '_blank')}
+>
+  <Navigation className="w-4 h-4 mr-2" />
+  Get Directions
+</Button>
                 </CardContent>
               </Card>
             </AnimatedElement>
@@ -155,13 +165,15 @@ const Contact = () => {
                   <CardContent>
                     <p className="text-muted-foreground text-sm mb-2">Clinic Phone</p>
                     <p className="font-semibold text-foreground">{clinicInfo.phone}</p>
+                   
                     <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="mt-3 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
-                    >
-                      Call Now
-                    </Button>
+  variant="outline" 
+  size="sm" 
+  className="mt-3 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground"
+  onClick={() => window.location.href = `tel:${clinicInfo.phone}`}
+>
+  Call Now
+</Button>
                   </CardContent>
                 </Card>
               </AnimatedElement>
@@ -177,13 +189,15 @@ const Contact = () => {
                   <CardContent>
                     <p className="text-muted-foreground text-sm mb-2">General Inquiries</p>
                     <p className="font-semibold text-foreground text-sm">{clinicInfo.email}</p>
+                    
                     <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="mt-3 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
-                    >
-                      Send Email
-                    </Button>
+  variant="outline" 
+  size="sm" 
+  className="mt-3 border-accent text-accent hover:bg-accent hover:text-accent-foreground"
+  onClick={() => window.location.href = `mailto:${clinicInfo.email}?subject=Inquiry from Website`}
+>
+  Send Email
+</Button>
                   </CardContent>
                 </Card>
               </AnimatedElement>
@@ -339,46 +353,72 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-2xl text-foreground text-center">Find Our Clinic</CardTitle>
               </CardHeader>
+           
               <CardContent className="p-0">
-                <div className="bg-muted h-64 flex items-center justify-center">
-                  <div className="text-center">
-                    <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-foreground mb-2">
-                      Healing Touch Homoeopathic Clinic
-                    </h3>
-                    <p className="text-muted-foreground mb-4">{clinicInfo.address}</p>
-                    <Button className="bg-gradient-primary hover:shadow-healing">
-                      <Navigation className="w-4 h-4 mr-2" />
-                      Open in Google Maps
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
+  <div className="relative w-full h-[450px] bg-muted group">
+    {/* The Live Interactive Map */}
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30274.048826385166!2d73.85366788299018!3d18.472055134011914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ebdee99775a1%3A0x31a04fcd962da882!2sHealing%20Touch%20Homoeopathic%20Clinic!5e0!3m2!1sen!2sin!4v1768123553593!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      style={{ border: 0 }}
+      allowFullScreen={true}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Clinic Location"
+      className="grayscale hover:grayscale-0 transition-all duration-500"
+    />
+
+    {/* Optional: Floating Button Overlay (Visible on hover or mobile) */}
+    <div className="absolute bottom-4 right-4 md:opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+      <Button 
+        onClick={() => window.open("https://maps.google.com/?q=Healing+Touch+Homoeopathic+Clinic+Pune", "_blank")}
+        className="bg-white text-primary hover:bg-primary hover:text-white shadow-lg"
+      >
+        <Navigation className="w-4 h-4 mr-2" />
+        Open in Google Maps
+      </Button>
+    </div>
+  </div>
+</CardContent>
             </Card>
           </div>
         </AnimatedElement>
 
-        {/* Quick Actions */}
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          {[
-            { icon: <Calendar className="w-12 h-12 text-primary mx-auto mb-4" />, title: "Book Appointment", text: "Schedule your consultation with our expert homeopath" },
-            { icon: <MessageSquare className="w-12 h-12 text-secondary mx-auto mb-4" />, title: "Join Webinar", text: "Learn about natural healing from home" },
-            { icon: <Phone className="w-12 h-12 text-accent mx-auto mb-4" />, title: "Emergency", text: "Urgent health concerns? Call us immediately" }
-          ].map((item, i) => (
-            <AnimatedElement key={i} animation="slideUp" delay={i * 200}>
-              <Card className="text-center border-primary/20 hover:shadow-healing transition-all duration-300">
-                <CardContent className="p-6">
-                  {item.icon}
-                  <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{item.text}</p>
-                  <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                    {item.title === "Book Appointment" ? "Book Now" : item.title === "Join Webinar" ? "Register" : "Call Now"}
-                  </Button>
-                </CardContent>
-              </Card>
-            </AnimatedElement>
-          ))}
-        </div>
+      
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+  {[
+    { 
+      icon: <Calendar className="w-12 h-12 text-primary mx-auto mb-4" />, 
+      title: "Book Appointment", 
+      text: "Schedule your consultation with our expert homeopath" 
+    },
+    { 
+      icon: <Phone className="w-12 h-12 text-accent mx-auto mb-4" />, 
+      title: "Emergency", 
+      text: "Urgent health concerns? Call us immediately" 
+    }
+  ].map((item, i) => (
+    <AnimatedElement key={i} animation="slideUp" delay={i * 200}>
+      <Card className="text-center border-primary/20 hover:shadow-healing transition-all duration-300">
+        <CardContent className="p-6">
+          {item.icon}
+          <h3 className="font-semibold text-foreground mb-2">{item.title}</h3>
+          <p className="text-sm text-muted-foreground mb-4">{item.text}</p>
+          
+          {/* Added onClick handler with the tel: protocol */}
+          <Button 
+            variant="outline" 
+            className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+            onClick={() => window.location.href = "tel:+918087994395"}
+          >
+            {item.title === "Book Appointment" ? "Book Now" : "Call Now"}
+          </Button>
+        </CardContent>
+      </Card>
+    </AnimatedElement>
+  ))}
+</div>
       </div>
     </section>
   );

@@ -96,9 +96,9 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                 <div className="text-sm text-background/80">
-                  <p>123 Healing Street</p>
-                  <p>Wellness District</p>
-                  <p>Mumbai - 400001</p>
+                  <p>Shop no 6, Rahul society, chowk, near Ganga Dham, Hamal Nagar, Market Yard, Bibwewadi, Pune, Maharashtra 411037</p>
+
+
                 </div>
               </div>
               
@@ -108,17 +108,17 @@ const Footer = () => {
                   href="tel:+919876543210" 
                   className="text-sm text-background/80 hover:text-primary transition-colors"
                 >
-                  +91 98765 43210
+                  +91 80879 94395
                 </a>
               </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary" />
                 <a 
-                  href="mailto:info@healingtouchclinic.com" 
+                  href="mailto:healingtouch20@yahoo.com" 
                   className="text-sm text-background/80 hover:text-primary transition-colors"
                 >
-                  info@healingtouchclinic.com
+                  healingtouch20@yahoo.com
                 </a>
               </div>
             </div>
@@ -137,47 +137,7 @@ const Footer = () => {
 
         {/* Social Media & Newsletter */}
         <div className="border-t border-background/20 pt-8 mb-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            {/* Social Media */}
-            <div className="flex items-center space-x-4">
-              <span className="text-sm text-background/80">Follow us:</span>
-              <div className="flex space-x-3">
-                <a 
-                  href="#" 
-                  className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <Facebook className="w-4 h-4" />
-                </a>
-                <a 
-                  href="#" 
-                  className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <Instagram className="w-4 h-4" />
-                </a>
-                <a 
-                  href="#" 
-                  className="w-8 h-8 bg-background/10 rounded-full flex items-center justify-center hover:bg-primary transition-colors"
-                >
-                  <Youtube className="w-4 h-4" />
-                </a>
-              </div>
-            </div>
-
-            {/* Newsletter */}
-            <div className="flex items-center space-x-4">
-              <span className="text-sm text-background/80">Stay updated:</span>
-              <div className="flex space-x-2">
-                <input 
-                  type="email" 
-                  placeholder="Your email"
-                  className="px-3 py-2 text-sm bg-background/10 border border-background/20 rounded text-background placeholder-background/60 focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <button className="px-4 py-2 bg-primary text-primary-foreground rounded text-sm font-medium hover:bg-primary-dark transition-colors">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
+        
         </div>
 
         {/* Bottom Footer */}

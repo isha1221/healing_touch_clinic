@@ -65,17 +65,24 @@ const Navbar = () => {
             >
               Contact
             </button>
+            <button 
+              onClick={() => scrollToSection('gallery')}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+            Gallery
+            </button>
             
             <div className="flex items-center space-x-2">
+           
               <Button 
-                variant="outline" 
-                size="sm"
-                onClick={() => scrollToSection('contact')}
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                Call Now
-              </Button>
+  variant="outline" 
+  size="sm"
+  onClick={() => window.location.href = "tel:+918087994395"}
+  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+>
+  <Phone className="w-4 h-4 mr-2" />
+  Call Now
+</Button>
               <Button 
                 size="sm"
                 onClick={() => scrollToSection('contact')}

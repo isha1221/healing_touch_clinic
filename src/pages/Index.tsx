@@ -6,6 +6,7 @@ import Webinars from "@/components/sections/Webinars";
 import Testimonials from "@/components/sections/Testimonials";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/ui/footer";
+import Gallery from "@/components/sections/Gallery";
 
 const Index = () => {
   return (
@@ -14,7 +15,8 @@ const Index = () => {
       <Hero />
       <About />
       <Treatments />
-      {/* <Webinars /> */}
+   
+      <Gallery/>
       <Testimonials />
       <Contact />
       <Footer />

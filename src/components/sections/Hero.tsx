@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Shield, Heart, Users } from "lucide-react";
+import doc_img from "@/asset/doc_image.jpg";
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -20,9 +21,9 @@ const Hero = () => {
                 Natural Healing
                 <span className="block text-primary">For Your Family</span>
               </h1>
-              <p className="text-xl text-muted-foreground max-w-lg leading-relaxed">
+              <p className="text-xl  max-w-lg leading-relaxed">
                 Experience gentle, effective homeopathic treatments that work with your body's natural healing power. 
-                Trusted care for over 15 years.
+                Trusted care for over 10 years.
               </p>
             </div>
 
@@ -50,7 +51,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-6 pt-4">
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Shield className="w-5 h-5 text-primary" />
-                <span className="text-sm">15+ Years Experience</span>
+                <span className="text-sm">10+ Years Experience</span>
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Heart className="w-5 h-5 text-primary" />
@@ -58,24 +59,24 @@ const Hero = () => {
               </div>
               <div className="flex items-center space-x-2 text-muted-foreground">
                 <Users className="w-5 h-5 text-primary" />
-                <span className="text-sm">1000+ Happy Patients</span>
+                <span className="text-sm">10000+ Happy Patients</span>
               </div>
             </div>
           </div>
 
           {/* Right Content - Doctor Image/Clinic */}
           <div className="relative animate-healing-float">
-            <div className="relative rounded-3xl overflow-hidden shadow-healing bg-gradient-healing p-8">
+            <div className="relative rounded-3xl overflow-hidden shadow-healing bg-gradient-healing p-12">
               <div className="bg-card rounded-2xl p-8 text-center">
-                <div className="w-32 h-32 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-warm">
-                 
+                <div className="w-60 h-42 mx-auto mb-6 bg-gradient-primary rounded-full flex items-center justify-center shadow-warm">
+                 <img src={doc_img}/>
                 </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">Dr. [Doctor Name]</h3>
-                <p className="text-muted-foreground mb-4">M.D. (Homoeopathy), 15+ Years Experience</p>
-                <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>✓ Specialized in Child & Family Health</p>
+                <h3 className="text-2xl font-bold text-foreground mb-2">Dr. Pooja Oswal</h3>
+                <p className=" mb-4">M.D. (Homoeopathy), 10+ Years Experience</p>
+                <div className="space-y-1 text-sm ">
+                  <p>✓ Specialized in Women & Child  Health</p>
                   <p>✓ Chronic Disease Management</p>
-                  <p>✓ Holistic Wellness Approach</p>
+                  <p>✓ Online consultation offered</p>
                 </div>
               </div>
               
@@ -89,11 +90,11 @@ const Hero = () => {
         {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">15+</div>
+            <div className="text-3xl font-bold text-primary mb-2">10+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+            <div className="text-3xl font-bold text-primary mb-2">10000+</div>
             <div className="text-sm text-muted-foreground">Happy Patients</div>
           </div>
           <div className="text-center">
