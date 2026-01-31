@@ -18,8 +18,8 @@ const Hero = () => {
           <div className="space-y-8 animate-fade-in">
             <div className="space-y-4">
               <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
-                Natural Healing
-                <span className="block text-primary">For Your Family</span>
+                Natural Healing at
+                <span className="block text-primary"> Healing Touch Homeopathic Clinic</span>
               </h1>
               <p className="text-xl  max-w-lg leading-relaxed">
                 Experience gentle, effective homeopathic treatments that work with your body's natural healing power. 

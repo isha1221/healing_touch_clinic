@@ -22,7 +22,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/736f31af-76da-4027-928d-ded6610cab7a.png" 
               alt="Healing Touch Homoeopathic Clinic"
-              className="h-10 w-auto"
+              className="h-20 w-auto"
             />
            
           </div>
