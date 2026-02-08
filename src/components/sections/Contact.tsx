@@ -102,9 +102,10 @@ const Contact = () => {
     email: "healingtouch20@yahoo.com",
     whatsapp: "+91 80879 94395",
     hours: {
-      weekdays: "9:00 AM - 7:00 PM",
-      saturday: "9:00 AM - 5:00 PM",
-      sunday: "10:00 AM - 2:00 PM"
+     
+      morning: "11:00 AM – 1:00 PM ",
+      evening:" 4:00 PM – 7:00 PM",
+      Sunday:"Appointments Only"
     },
     googleMapsLink:"https://maps.app.goo.gl/kQTXrTCC7vxKU4u59"
 
@@ -213,16 +214,16 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Monday - Friday</span>
-                    <span className="font-medium">{clinicInfo.hours.weekdays}</span>
+                    <span className="text-muted-foreground">Morning</span>
+                    <span className="font-medium">{clinicInfo.hours.morning}</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-muted-foreground">Saturday</span>
-                    <span className="font-medium">{clinicInfo.hours.saturday}</span>
+                    <span className="text-muted-foreground">Evening</span>
+                    <span className="font-medium">{clinicInfo.hours.evening}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-muted-foreground">Sunday</span>
-                    <span className="font-medium">{clinicInfo.hours.sunday}</span>
+                    <span className="font-medium">{clinicInfo.hours.Sunday}</span>
                   </div>
                   <div className="pt-3 border-t border-border">
                     <p className="text-sm text-muted-foreground">

@@ -127,9 +127,12 @@ const Footer = () => {
             <div className="pt-4 border-t border-background/20">
               <h5 className="font-medium text-sm mb-2">Opening Hours</h5>
               <div className="text-xs text-background/80 space-y-1">
-                <p>Mon-Fri: 9:00 AM - 7:00 PM</p>
-                <p>Saturday: 9:00 AM - 5:00 PM</p>
-                <p>Sunday: 10:00 AM - 2:00 PM</p>
+  
+
+
+                <p>Morning: 11:00 AM – 1:00 PM</p>
+                <p>Evening: 4:00 PM – 7:00 PM</p>
+                <p>Sunday: Appointments Only</p>
               </div>
             </div>
           </div>

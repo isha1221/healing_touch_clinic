@@ -32,7 +32,7 @@ const Treatments = () => {
       icon: Wind,
       title: "Respiratory Conditions",
       description: "Natural relief for breathing and lung-related issues",
-      conditions: ["Asthma", "Tonsilities", "Allergies", "Sinusitis", "Cough", "Tuberculosis"],
+      conditions: ["Asthma", "Tonsillitis", "Allergies", "Sinusitis", "Cough", "Tuberculosis"],
       color: "secondary",
       gradient: "bg-secondary/10"
     },
@@ -64,7 +64,7 @@ const Treatments = () => {
       icon: Users,
       title: "Women's Health",
       description: "Specialized care for women's unique health needs",
-      conditions: ["PCOD/PCOS", "Menstrual Disorders", "Menopause", "Infertility", "Pregnancy Care", "Thyroide Disorder"],
+      conditions: ["PCOD/PCOS", "Menstrual Disorders", "Menopause", "Infertility", "Pregnancy Care", "Thyroid disorders"],
       color: "accent",
       gradient: "bg-accent/10"
     },
